@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>X Academy</title>
+        <link rel="stylesheet" href="./styles/sidebar.css">
+        <link rel="stylesheet" href="./styles/index.css">
+        <link rel="icon" type="image/x-icon" href="./images/logoWeb.jpg">
+        <script src="./js/sidebar.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Ubuntu&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <div class="sidebar">
+            <img src="./images/logo.jpg">
+            <div id="buttonsGroup">
+                <button id="menu" onclick="menu()"><img src="./images/menu.svg" class="icon"></button>
+                <button onclick="redirect('')">Начало</button>
+                <button onclick="redirect('groups')">Групови уроци</button>
+                <button onclick="redirect('individual')">Индивидуални уроци</button>
+            </div>
+        </div>
+
+        <div id="menuMobile">
+            <button onclick="redirect('')">Начало</button>
+            <button onclick="redirect('groups')">Групови уроци</button>
+            <button onclick="redirect('individual')">Индивидуални уроци</button>
+        </div>
+
+            <div id="mainContent">
+                <div id="info">
+                    <div id="infoCenteredText">
+                        <h1>
+                            Искате вашето дете да получaва частни уроци от някой от нашите математически експерти?
+                        </h1>
+                        <h1>
+                            Можете да се свържете с тях всеки работен ден между 08:00 и 17:00!
+                        </h1>
+                    </div>
+                    <div id="imgContainerIndividual">
+                        <div class="imgWithTitleIndividual">
+                            <img src="./images/nikola.jpg">
+                            <p>
+                                Никола Кръстев<br>
+                                Телефон за контакт:<br>
+                                088 123 4567
+                            </p>
+                        </div>
+                        <div class="imgWithTitleIndividual">
+                            <img src="./images/nikola.jpg">
+                            <p>
+                                Нади Бузова<br>
+                                Телефон за контакт:<br>
+                                088 123 4567
+                            </p>
+                        </div>
+                        <div class="imgWithTitleIndividual">
+                            <img src="./images/vasko.jpg">
+                            <p>
+                                Васил Райков<br>
+                                Телефон за контакт:<br>
+                                088 123 4567
+                            </p>
+                        </div>
+                        <div class="imgWithTitleIndividual">
+                            <img src="./images/vasko.jpg">
+                            <p>
+                                Нади Бузова<br>
+                                Телефон за контакт:<br>
+                                088 123 4567
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>

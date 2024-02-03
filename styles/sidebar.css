@@ -1,0 +1,175 @@
+:root{
+    --sidebar-size: 9vh;
+    --button-height: 100%;
+    --button-font-size: 2vw;
+    --data-font-size: 2vh;
+    --small-margin-height: 1vh;
+    --large-margin-height: 3vh;
+    --small-margin-width: 1vw;
+    --medium-margin-width: 2vw;
+    --background-color: #76d0eb;
+    --background-color-hover: #3c68f8;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: var(--sidebar-size);
+    background-color: var(--background-color);
+    display: flex;
+    align-content: center;
+    align-items: start;
+    justify-content: space-between;
+    z-index: 2;
+  }
+
+  .sidebar img{
+    height: 100%;
+    width: fit-content;
+    margin-left: var(--small-margin-width);
+    content: url('../images/logoWeb.jpg');
+  }
+
+  #buttonsGroup button:first-child {
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+
+  #buttonsGroup button:first-child img{
+    content: url("../images/menu.svg");
+  }
+
+  #buttonsGroup button:not(:first-child) {display: none;}
+
+  #buttonsGroup{
+    height: 100%;
+    display: flex;
+    margin-left: var(--small-margin-width);
+  }
+
+  #buttonsGroup button:not(:first-child){
+    align-content: center;
+    align-items: center;
+    text-align: center;
+
+    height: var(--button-height);
+    width: 28.5vw;
+    
+    font-size: var(--button-font-size);
+    font-family: 'Roboto Condensed', sans-serif;
+
+    border: none;
+    
+    background-color: var(--background-color);
+    color: #333;
+    
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+  }
+  
+  #buttonsGroup button:hover {
+    background-color: var(--background-color-hover);
+    color: black;
+  }
+
+  #menu{
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    
+    background-color: var(--background-color);
+    color: #333;
+    
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+  }
+
+  i{
+    display: block; /* Make the icon a block element */
+    width: 100%; /* Make the icon fill the entire width of the button */
+    height: 100%;
+  }
+
+  #menuMobile{
+    position: fixed;
+    top:0;
+    left:0;
+    margin-top: var(--sidebar-size);
+    display: none;
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 0.5s ease;
+    background-color: var(--background-color);
+  }
+
+  #menuMobile button{
+      width: 100vw;
+      height: 6vh;
+      align-content: center;
+      align-items: center;
+      text-align: center;
+      
+      font-size: calc(var(--button-font-size)*2);
+      font-family: 'Roboto Condensed', sans-serif;
+  
+      border: none;
+      
+      background-color: var(--background-color);
+      color: #333;
+      
+      cursor: pointer;
+      transition: background-color 0.5s ease;
+  }
+  
+@media screen  and (min-width: 1025px){
+  #buttonsGroup button:first-child {display: none;}
+  #buttonsGroup button:not(:first-child) {display: block;}
+
+  #buttonsGroup{
+    height: 100%;
+    display: flex;
+    margin-left: var(--small-margin-width);
+  }
+  
+    #buttonsGroup button:not(:first-child){
+      align-content: center;
+      align-items: center;
+      text-align: center;
+  
+      height: var(--button-height);
+      width: 25vw;
+      
+      font-size: var(--button-font-size);
+      font-family: 'Roboto Condensed', sans-serif;
+  
+      border: none;
+      
+      background-color: var(--background-color);
+      color: #333;
+      
+      cursor: pointer;
+      transition: background-color 0.5s ease;
+    }
+    
+    #buttonsGroup button:hover {
+      background-color: var(--background-color-hover);
+      color: black;
+    }
+
+    .sidebar{
+      justify-content: flex-start;
+    }
+  
+    .sidebar img{
+      height: 100%;
+      width: fit-content;
+      margin-left: var(--small-margin-width);
+      content: url('../images/logo.jpg');
+    }
+  
+}

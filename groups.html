@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>X Academy</title>
+        <link rel="stylesheet" href="./styles/sidebar.css">
+        <link rel="stylesheet" href="./styles/index.css">
+        <link rel="icon" type="image/x-icon" href="./images/logoWeb.jpg">
+        <script src="./js/sidebar.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Ubuntu&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <div>
+            <div class="sidebar">
+                <img src="./images/logo.jpg">
+                <div id="buttonsGroup">
+                    <button id="menu" onclick="menu()"><img src="./images/menu.svg" class="icon"></button>
+                    <button onclick="redirect('')">Начало</button>
+                    <button onclick="redirect('groups')">Групови уроци</button>
+                    <button onclick="redirect('individual')">Индивидуални уроци</button>
+                </div>
+            </div>
+
+            <div id="menuMobile">
+                <button onclick="redirect('')">Начало</button>
+                <button onclick="redirect('groups')">Групови уроци</button>
+                <button onclick="redirect('individual')">Индивидуални уроци</button>
+            </div>
+
+            <div id="mainContent" class="groups">
+                <div id="info">
+                    <div id="imgContainer">
+                        <div class="imgWithTitle">
+                            <img src="./images/nikola.jpg">
+                            <h1>
+                                Никола Кръстев
+                            </h1>
+                        </div>
+                        <div class="imgWithTitle">
+                            <img src="./images/nadi.jpg">
+                            <h1>
+                                Нади Бузова
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <h1>
+                            6. клас:
+                        </h1>
+                        <p class="text">
+                            Вторник и четвъртък 14:30-16:00 - Никола Кръстев
+                        </p>
+                    </div>
+                    <div class="section">
+                        <h1>
+                            9. клас:
+                        </h1>
+                        <p class="text">
+                            Вторник и четвъртък 16:00-17:30 - Никола Кръстев
+                        </p>
+                    </div>
+                    <div class="section">
+                        <h1>
+                            3. клас:
+                        </h1>
+                        <p class="text">
+                            Неделя 11:30-13:00 - Нади Бузова
+                        </p>
+                    </div>
+                    <div class="section">
+                        <h1>
+                            Записването в групите се извършва на номер :<br> 088 123 4567
+                        </h1>
+                    </div>
+                    <div class="section">
+                        <h1>
+                            Местоположение на уроците :<br> ул. "Пиротска" 45
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
