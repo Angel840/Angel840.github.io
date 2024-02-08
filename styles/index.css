@@ -218,7 +218,7 @@ h1{
     
     .imgWithTitleIndividual img{
         max-height: 40vh;
-        max-width: 20vw;
+        max-width: 15vw;
         height: fit-content;
         width: fit-content;
         position: relative;
