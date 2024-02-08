@@ -37,16 +37,21 @@
     display: flex;
     align-items: center;
     align-content: center;
+    justify-content: center;
+    margin-right: var(--small-margin-width);
   }
 
   #buttonsGroup button:first-child img{
     content: url("../images/menu.svg");
+    width: 20vw;
+    margin-left: 0;
   }
 
   #buttonsGroup button:not(:first-child) {display: none;}
 
   #buttonsGroup{
     height: 100%;
+    width: auto;
     display: flex;
     margin-left: var(--small-margin-width);
   }
