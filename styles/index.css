@@ -136,6 +136,10 @@ h1{
         background-size: cover;
     }
 
+    h1.numberText{
+        line-height: 4vh;
+    }
+
     .groups, .indexText{
         left:auto;
         top: auto;
@@ -291,5 +295,16 @@ h1{
     }
     body{
         line-height: 3vh;
+    }
+    #imgContainer{
+        margin-top: 2.5%;
+        flex-direction: column;
+    }
+
+    #info.infoGroups{
+        height: 95%;
+    }
+    .imgWithTitle{
+        margin-top: 1vh;
     }
 }
