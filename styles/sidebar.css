@@ -28,7 +28,7 @@
 
   .sidebar img{
     height: 100%;
-    width: fit-content;
+    width: auto;
     margin-left: var(--small-margin-width);
     content: url('../images/logoWeb.jpg');
   }
