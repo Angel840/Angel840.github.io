@@ -91,6 +91,10 @@ h1{
     margin-top: var(--sidebar-size);
 }
 
+.indexText #info{
+    overflow-y: scroll;
+}
+
 .groups h1{
     font-size: 7vw;
 }
