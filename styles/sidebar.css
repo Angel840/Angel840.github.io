@@ -43,7 +43,7 @@
 
   #buttonsGroup button:first-child img{
     content: url("../images/menu.svg");
-    width: 20vw;
+    width: 10vw;
     margin-left: 0;
   }
 
