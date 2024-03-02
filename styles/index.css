@@ -85,6 +85,7 @@ h1{
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    text-wrap: balance;
     margin-top: 10vh;
 }
 
@@ -177,9 +178,7 @@ h1{
 }
 
 .imgWithTitleMobile img{
-    max-height: 70vh;
-    max-width: 90vw;
-    height: fit-content;
+    width: 75%;
     border-radius: 10px;
     margin-top: var(--large-margin-height);
 }
