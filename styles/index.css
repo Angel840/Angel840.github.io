@@ -212,6 +212,7 @@ h1{
 
 .header p{
     text-align: center;
+    width: 95%;
 }
 
 .contactText{
@@ -313,7 +314,7 @@ h1{
     
     h1, p{
         font-family: 'Roboto Condensed', sans-serif;
-        margin-top: var(--medium-margin-height);
+        margin-top: 0;
         margin-bottom: 0;
     }
 
@@ -327,11 +328,11 @@ h1{
 
     .indexText h1{
         font-size: 3.5vh;
-        white-space:initial;
+        white-space:pre-line;
     }
     .indexText p{
         font-size: 3vh;
-        white-space: initial;
+        white-space: pre-line;
     }
     
     .imgContainerIndividual{
