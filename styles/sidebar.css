@@ -1,7 +1,7 @@
 :root{
     --sidebar-size: 9vh;
     --button-height: 100%;
-    --button-font-size: 2vw;
+    --button-font-size: 1.5vw;
     --data-font-size: 2vh;
     --small-margin-height: 1vh;
     --large-margin-height: 3vh;
@@ -151,7 +151,7 @@
       text-align: center;
   
       height: var(--button-height);
-      width: 25vw;
+      width: 20vw;
       
       font-size: var(--button-font-size);
       font-family: 'Roboto Condensed', sans-serif;

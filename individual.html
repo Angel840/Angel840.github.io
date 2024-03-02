@@ -2,16 +2,26 @@
 <html>
 
     <head>
-        <title>X Academy</title>
+        <title>X-Academy</title>
+        <meta name="description" content="Искате Вашето дете да подобри уменията си по математика? На правилното място сте! Остава Ви само да изберете дали искате самостоятелно или групово обучение, като и двете от тези възможности можете да намерите при нас на най-високо ниво!">
         <link rel="stylesheet" href="./styles/sidebar.css">
         <link rel="stylesheet" href="./styles/index.css">
-        <link rel="icon" type="image/x-icon" href="./images/logoWeb.jpg">
+        <!-- <link rel="icon" type="image/x-icon" href="./images/logoWeb.jpg"> -->
+        <link rel="icon" href="./images/logoWeb.ico">
         <script src="./js/sidebar.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Ubuntu&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="application/ld+json">
+            {
+              "@context" : "https://schema.org",
+              "@type" : "WebSite",
+              "name" : "X-ACADEMY Уроци по математика",
+              "url" : "https://x-academy.bg/"
+            }
+          </script>
     </head>
 
     <body>
@@ -19,29 +29,31 @@
             <img src="./images/logo.jpg">
             <div id="buttonsGroup">
                 <button id="menu" onclick="menu()"><img src="./images/menu.svg" class="icon"></button>
-                <button onclick="redirect('')">Начало</button>
+                <button onclick="redirect('')">За нас</button>
                 <button onclick="redirect('groups')">Групови уроци</button>
                 <button onclick="redirect('individual')">Индивидуални уроци</button>
+                <button onclick="redirect('contacts')">Контакти</button>
             </div>
         </div>
 
         <div id="menuMobile">
-            <button onclick="redirect('')">Начало</button>
+            <button onclick="redirect('')">За нас</button>
             <button onclick="redirect('groups')">Групови уроци</button>
             <button onclick="redirect('individual')">Индивидуални уроци</button>
+            <button onclick="redirect('contacts')">Контакти</button>
         </div>
 
-            <div id="mainContent">
+            <div id="mainContent" class="individualContent">
                 <div id="info">
                     <div id="infoCenteredText">
                         <h1>
                             Искате вашето дете да получaва частни уроци от някой от нашите математически експерти?
                         </h1>
                         <h1>
-                            Можете да се свържете с тях всеки работен ден между 08:00 и 17:00!
+                            Можете да се <a href="/contacts">свържете</a> с нас всеки работен ден между 08:00 и 17:00, за да запазите час за урок!
                         </h1>
                     </div>
-                    <div id="imgContainerIndividual">
+                    <div class="imgContainerIndividual">
                         <div class="imgWithTitleIndividual">
                             <img src="./images/nikola.jpg">
                             <p>
@@ -66,6 +78,14 @@
                                 Марина Гугушева<br>
                             </p>
                         </div>
+                    </div>
+                    <div class="imgContainerIndividual">
+                        <div class="imgWithTitleIndividual">
+                            <img src="./images/aleksandyr.jpg">
+                            <p>
+                                Александър Николов<br>
+                            </p>
+                        </div>
                         <div class="imgWithTitleIndividual">
                             <img src="./images/teq.jpg">
                             <p>
@@ -73,11 +93,11 @@
                             </p>
                         </div>
                     </div>
-                    <div id="infoCenteredTextLast">
+                    <!-- <div id="infoCenteredTextLast">
                         <h1>
                             За контакт: +359 89 8684009
                         </h1>
-                    </div>
+                    </div> -->
                 </div>
             </div>
     </body>
