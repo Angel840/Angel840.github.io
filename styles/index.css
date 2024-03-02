@@ -259,6 +259,19 @@ h1{
         display: inline;
     }
 
+    .header h1 {
+        font-size: 5vh;
+    }
+
+    .header p {
+        font-size: 4.5vh;
+    }
+
+    .contactText {
+        line-height: 7vh;
+        height: 100%;
+    }
+
     h1.numberText{
         line-height: 4vh;
     }
