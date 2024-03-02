@@ -236,12 +236,8 @@ h1{
     font-size: 1.5em;
 }
 
-.contactInfo{
-    display: flex
-}
-
-#div1, #div2{
-    width: 40vw;
+#break{
+    display: none;
 }
 
 @media only screen and (min-width: 1025px), (orientation: landscape){
@@ -261,6 +257,18 @@ h1{
 
     .teacherName{
         display: inline;
+    }
+
+    #break{
+        display: block;
+    }
+
+    .contactInfo{
+        display: flex
+    }
+    
+    #div1, #div2{
+        width: 40vw;
     }
 
     .header h1 {
