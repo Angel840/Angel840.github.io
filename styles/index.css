@@ -1,4 +1,4 @@
-:root{
+:root {
     --title-font-size: 4vh;
     --data-font-size: 2.5vh;
     --small-margin-height: 1vh;
@@ -13,59 +13,63 @@
     --sidebar-size: 9vh;
 }
 
-body, html{
+body,
+html {
     width: 100%;
     height: 100%;
     margin: 0 0;
 }
 
-body{
+body {
     background-color: rgb(255, 251, 235);
 }
 
-h1, p{
+h1,
+p,
+#addressLink {
     font-family: 'Roboto Condensed', sans-serif;
     margin-top: var(--medium-margin-height);
     margin-bottom: 0;
 }
 
-p{
+p,
+#addressLink {
     font-size: 6vw;
 }
 
-h1{
+h1 {
     font-size: 4vw;
 }
 
 ::-webkit-scrollbar {
     width: 15px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
+}
+
+/* Track */
+::-webkit-scrollbar-track {
     /* box-shadow: inset 0 0 5px rgb(255, 255, 255);  */
     border-radius: 15px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: rgb(160, 160, 160); 
-    border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: var(--background-color); 
-  }
+}
 
-.imgContainerIndividual{
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(160, 160, 160);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--background-color);
+}
+
+.imgContainerIndividual {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.imgWithTitleIndividual{
+.imgWithTitleIndividual {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -73,13 +77,13 @@ h1{
     text-align: center;
 }
 
-.imgWithTitleIndividual img{
+.imgWithTitleIndividual img {
     width: 75%;
     border-radius: 10px;
     margin-top: var(--medium-margin-height);
 }
 
-#infoCenteredText{
+#infoCenteredText {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -89,59 +93,63 @@ h1{
     margin-top: 10vh;
 }
 
-#infoCenteredTextLast{
+#infoCenteredTextLast {
     display: flex;
     align-items: center;
     justify-self: center;
     flex-direction: column;
 }
 
-#infoCenteredTextLast h1{
+#infoCenteredTextLast h1 {
     margin-top: var(--medium-margin-height);
     margin-bottom: var(--medium-margin-height);
     font-size: 3.2vh;
 }
 
-.imgWithTitle{
+.imgWithTitle {
     display: none;
     text-align: center;
 }
 
-.groups, .indexText{
+.groups,
+.indexText {
     left: 0;
     top: 0;
     margin-top: var(--sidebar-size);
 }
 
-.indexText #info, .individualContent #info{
-    overflow-y: scroll;
+.indexText #info,
+.individualContent #info {
+    overflow-y: auto;
 }
 
-.individualContent p{
+.individualContent p {
     margin-bottom: var(--medium-margin-height);
 }
 
-.groups h1{
+.groups h1 {
     /* font-size: 7vw; */
     font-size: 2.3em;
 }
-.groups p{
+
+.groups p {
     /* font-size: 6vw; */
     font-size: 2em;
 }
 
-.indexText h1{
+.indexText h1 {
     width: 95%;
     font-size: 5.5vw;
     white-space: pre-line;
 }
-.indexText p{
+
+.indexText p {
     width: 95%;
     font-size: 4.5vw;
     white-space: pre-line;
 }
 
-.section{
+.section {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -149,8 +157,8 @@ h1{
     align-items: center;
 }
 
-.redirectBtn{
-    border-style:none;
+.redirectBtn {
+    border-style: none;
     margin-top: var(--large-margin-height);
     margin-bottom: var(--large-margin-height);
     border-radius: 20px;
@@ -161,15 +169,15 @@ h1{
     outline: 0;
 }
 
-.redirectBtn:hover{
+.redirectBtn:hover {
     background-color: var(--background-color-hover);
 }
 
-.notAtBottom{
+.notAtBottom {
     margin-bottom: 3vh;
 }
 
-.imgWithTitleMobile{
+.imgWithTitleMobile {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -177,32 +185,32 @@ h1{
     align-items: center;
 }
 
-.imgWithTitleMobile img{
+.imgWithTitleMobile img {
     width: 75%;
     border-radius: 10px;
     margin-top: var(--large-margin-height);
 }
 
-.teacherName{
+.teacherName {
     display: none;
 }
 
-.header h1{
+.header h1 {
     text-align: center;
     width: 95%;
 }
 
-.header i{
+.header i {
     width: 1em;
     height: 1em;
 }
 
-.header i:hover{
+.header i:hover {
     color: #76d0eb;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.header{
+.header {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -210,44 +218,98 @@ h1{
     align-items: center;
 }
 
-.header p{
+.header p,
+#addressLink {
     text-align: center;
     width: 95%;
 }
 
-.groups p{
+.groups p {
     width: 95%;
 }
 
-.contactText{
+.contactText {
     line-height: 2.5em;
     height: 100%;
 }
 
-.contactText #info{
+.contactText #info {
     margin-top: var(--very-large-margin-height);
 }
 
-.contactText h1{
+.contactText h1 {
     font-size: 1.8em;
 }
 
-.contactText p{
+.contactText p,
+#addressLink {
     font-size: 1.5em;
 }
 
-#break{
+#break {
     display: none;
 }
 
-@media only screen and (min-width: 1025px), (orientation: landscape){
-    body, html{
+#location,
+#lessonTypes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#lessonTypes {
+    flex-direction: column-reverse;
+}
+
+#location p,
+#lessonTypes p {
+    margin-top: 0;
+    width: 100%;
+}
+
+#location p:not(:first-child),
+#lessonTypes p:not(:first-child) {
+    margin-bottom: 2vh;
+}
+
+#lessonTypes img {
+    width: 100%;
+    height: fit-content;
+}
+
+iframe {
+    height: 40vh;
+    width: 100%;
+}
+
+#summerStatus {
+    width: 100%;
+    height: fit-content;
+}
+
+.noScroll {
+    overflow-y: hidden;
+}
+
+.fullHeight {
+    height: 70vh;
+}
+
+@media only screen and (min-width: 1025px),
+(orientation: landscape) {
+
+    body,
+    html {
         width: 100%;
         height: 100%;
         overflow: hidden;
         margin: 0 0;
     }
-    body{
+
+    body {
         display: flex;
         flex-direction: column;
         background-image: url("../images/background.jpg");
@@ -255,19 +317,54 @@ h1{
         background-size: cover;
     }
 
-    .teacherName{
+    #summerStatus {
+        width: 50%;
+        height: fit-content;
+    }
+
+    #location,
+    #lessonTypes {
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    #lessonTypes {
+        margin-bottom: var(--large-margin-height);
+        margin-top: var(--large-margin-height);
+    }
+
+    iframe {
+        height: 50vh;
+        width: 100%;
+    }
+
+    #lessonTypes img {
+        height: 40vh;
+        width: fit-content;
+    }
+
+    #lessonTypes p {
+        text-align: right;
+        margin-left: 2vw;
+        width: 95%;
+    }
+
+    .teacherName {
         display: inline;
     }
 
-    #break{
+    #break {
         display: block;
     }
 
-    .contactInfo{
+    .contactInfo {
         display: flex
     }
-    
-    #div1, #div2{
+
+    #div1,
+    #div2 {
         width: 40vw;
     }
 
@@ -275,7 +372,8 @@ h1{
         font-size: 5vh;
     }
 
-    .header p {
+    .header p,
+    #addressLink {
         font-size: 4.5vh;
     }
 
@@ -284,110 +382,129 @@ h1{
         height: 100%;
     }
 
-    h1.numberText{
+    h1.numberText {
         line-height: 4vh;
     }
 
-    .imgWithTitleMobile{
+    .imgWithTitleMobile {
         display: none;
     }
 
-    .groups, .indexText{
-        left:auto;
+    .groups,
+    .indexText {
+        left: auto;
         top: auto;
         margin-top: 0;
     }
-    
-    .groups h1{
+
+    .groups h1 {
         /* font-size: 2em; */
         font-size: 4.5vh;
         margin-bottom: var(--small-margin-height);
     }
-    .groups p{
+
+    .groups p {
         font-size: 4vh;
         /* font-size: 1.6em; */
     }
 
-    .groupsSection{
+    .groupsSection {
         display: flex;
         align-content: center;
         flex-direction: column;
         justify-content: center;
         height: 100%;
     }
-    
-    #mainContent{
+
+    #mainContent {
         width: 100%;
         height: 100%;
-    
+
         display: flex;
         justify-content: center;
     }
-    
-    #info{
+
+    #info {
         margin: var(--very-large-margin-height) var(--medium-margin-width);
         background-color: rgb(255, 251, 235);
         width: 90%;
         height: 87.5%;
         border-radius: 15px;
     }
-    
-    .section{
+
+    .section {
         display: flex;
         align-items: flex-start;
         flex-direction: column;
         justify-content: center;
         text-align: left;
-    
+
         margin: var(--large-margin-height) var(--large-margin-width);
     }
-    
-    h1, p{
+
+    .fullHeight {
+        height: 100%;
+        margin: 0 0 0 0;
+    }
+
+    .centeredImg {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    h1,
+    p,
+    #addressLink {
         font-family: 'Roboto Condensed', sans-serif;
         margin-top: 0;
         margin-bottom: 0;
     }
 
-    h1{
+    h1 {
         font-size: 3.5vh;
     }
 
-    p{
+    p,
+    #addressLink {
         font-size: 3vh;
     }
 
-    .indexText h1{
+    .indexText h1 {
         font-size: 3.5vh;
-        white-space:pre-line;
+        white-space: pre-line;
     }
-    .indexText p{
+
+    .indexText p {
         font-size: 3vh;
         white-space: pre-line;
     }
-    
-    .imgContainerIndividual{
+
+    .imgContainerIndividual {
         margin-top: 2.5%;
         display: flex;
         flex-direction: row;
         align-items: center;
     }
 
-    .imgWithTitleIndividual{
+    .imgWithTitleIndividual {
         display: flex;
         flex-direction: column;
         width: 25%;
         align-items: center;
     }
-    
-    .imgWithTitleIndividual img{
+
+    .imgWithTitleIndividual img {
         max-height: 40vh;
         max-width: 15vw;
         height: fit-content;
         width: fit-content;
         position: relative;
     }
-    
-    #imgContainer{
+
+    #imgContainer {
         position: absolute;
         margin-left: 45%;
         margin-top: 7.5%;
@@ -397,27 +514,27 @@ h1{
         width: 50%;
     }
 
-    #imgContainer h1{
+    #imgContainer h1 {
         font-size: 3vh;
     }
 
-    .imgWithTitle{
+    .imgWithTitle {
         display: flex;
         flex-direction: column;
         width: 25%;
         align-items: center;
         margin-left: 7.5vw;
     }
-    
-    .imgWithTitle img{
+
+    .imgWithTitle img {
         max-height: 40vh;
         max-width: 15vw;
         height: fit-content;
         position: relative;
         border-radius: 10px;
     }
-    
-    #infoCenteredText{
+
+    #infoCenteredText {
         display: flex;
         align-items: center;
         justify-self: center;
@@ -425,49 +542,64 @@ h1{
         margin-top: calc(var(--large-margin-height)*2);
     }
 
-    #infoCenteredTextLast{
+    #infoCenteredTextLast {
         display: flex;
         align-items: center;
         justify-self: center;
         flex-direction: column;
         margin-top: var(--large-margin-height);
     }
-    #infoCenteredTextLast h1{
+
+    #infoCenteredTextLast h1 {
         font-size: 5vh;
     }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1400px) and (min-height:850px) and (max-height:1100px){
-    .indexText h1, h1{
+@media only screen and (min-width: 1025px) and (max-width: 1400px) and (min-height:850px) and (max-height:1100px) {
+
+    .indexText h1,
+    h1 {
         font-size: 2.9vh;
     }
-    .indexText p, p{
+
+    .indexText p,
+    p,
+    #addressLink {
         font-size: 2.5vh;
     }
-    body{
+
+    body {
         line-height: 3vh;
     }
 }
 
 @media screen and (min-aspect-ratio:1/1) and (max-aspect-ratio:3/2) {
-    .indexText h1, h1{
+
+    .indexText h1,
+    h1 {
         font-size: 2.9vh;
     }
-    .indexText p, p{
+
+    .indexText p,
+    p,
+    #addressLink {
         font-size: 2.5vh;
     }
-    body{
+
+    body {
         line-height: 3vh;
     }
-    #imgContainer{
+
+    #imgContainer {
         margin-top: 2.5%;
         flex-direction: column;
     }
 
-    #info.infoGroups{
+    #info.infoGroups {
         height: 95%;
     }
-    .imgWithTitle{
+
+    .imgWithTitle {
         margin-top: 1vh;
     }
 }

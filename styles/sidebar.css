@@ -114,7 +114,7 @@
 
   #menuMobile button{
       width: 100vw;
-      height: 8vh;
+      height: 6vh;
       align-content: center;
       align-items: center;
       text-align: center;
@@ -130,6 +130,12 @@
       cursor: pointer;
       transition: background-color 0.5s ease;
   }
+
+  #menuMobile button:not(:first-child){
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-top-color: rgb(56, 102, 135);
+}
   
 @media screen  and (min-width: 1025px), (orientation: landscape){
   #buttonsGroup button:first-child {display: none;}
@@ -151,7 +157,7 @@
       text-align: center;
   
       height: var(--button-height);
-      width: 20vw;
+      width: 16vw;
       
       font-size: var(--button-font-size);
       font-family: 'Roboto Condensed', sans-serif;
