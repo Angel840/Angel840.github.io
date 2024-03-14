@@ -253,7 +253,8 @@ h1 {
 #location,
 #lessonTypes,
 #prices,
-#startWelcome {
+#startWelcome,
+#summerCamp {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -262,30 +263,33 @@ h1 {
     align-items: center;
 }
 
-#lessonTypes {
+#lessonTypes{
     flex-direction: column-reverse;
 }
 
 #location p,
 #lessonTypes p,
 #prices p,
-#startWelcome p {
+#startWelcome p,
+#summerCamp p {
     margin-top: 0;
     width: 100%;
 }
 
 #location p:not(:first-child),
-#lessonTypes p:not(:first-child) {
+#lessonTypes p:not(:first-child),
+#summerCamp p:not(:first-child) {
     margin-bottom: 2vh;
 }
 
-#lessonTypes img, #prices img {
+#lessonTypes img, #prices img, #startWelcome img {
     width: 100%;
     height: fit-content;
 }
 
-#startWelcome img {
-    display: none;
+#summerCamp video{
+    width: 100%;
+    height: fit-content;
 }
 
 iframe {
@@ -388,14 +392,15 @@ iframe {
     #location,
     #lessonTypes,
     #prices,
-    #startWelcome {
+    #startWelcome,
+    #summerCamp {
         align-content: center;
         justify-content: center;
         align-items: center;
         flex-direction: row;
     }
 
-    #lessonTypes, #prices, #startWelcome {
+    #lessonTypes, #prices, #startWelcome, #summerCamp {
         margin-bottom: var(--large-margin-height);
         margin-top: var(--large-margin-height);
     }
@@ -418,13 +423,17 @@ iframe {
         height: fit-content;
         display: block;
     }
+    #summerCamp video{
+        width: 30vw;
+        height: fit-content;
+    }
 
     #lessonTypes p {
         text-align: right;
         margin-left: 2vw;
         width: 95%;
     }
-    #prices p, #startWelcome p {
+    #prices p, #startWelcome p, #summerCamp p {
         text-align: left;
         margin-right: 4vw;
         width: 95%;
