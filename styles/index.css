@@ -251,7 +251,9 @@ h1 {
 }
 
 #location,
-#lessonTypes {
+#lessonTypes,
+#prices,
+#startWelcome {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -265,7 +267,9 @@ h1 {
 }
 
 #location p,
-#lessonTypes p {
+#lessonTypes p,
+#prices p,
+#startWelcome p {
     margin-top: 0;
     width: 100%;
 }
@@ -275,9 +279,13 @@ h1 {
     margin-bottom: 2vh;
 }
 
-#lessonTypes img {
+#lessonTypes img, #prices img {
     width: 100%;
     height: fit-content;
+}
+
+#startWelcome img {
+    display: none;
 }
 
 iframe {
@@ -296,6 +304,30 @@ iframe {
 
 .fullHeight {
     height: 70vh;
+}
+
+.bordered {
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    width: 100%;
+    margin-bottom: 2vw;
+}
+
+.programm div:last-child {
+    border-bottom-width: 0px;
+    border-bottom-style: solid;
+}
+
+#bigH1{
+    font-size: 7vw;
+}
+
+#pricesInfo{
+    margin-bottom: 2vh;
+}
+
+#prices img {
+    margin-bottom: 3vh;
 }
 
 @media only screen and (min-width: 1025px),
@@ -317,20 +349,53 @@ iframe {
         background-size: cover;
     }
 
+    #bigH1{
+        font-size: 5vh;
+    }
+
+    #beforeFirst{
+        border-bottom: 2px solid black;
+        border-top: 2px solid black;
+        width: 100%;
+        padding: 8px;
+    }
+
+    .bordered {
+        border-right-width: 2px;
+        border-right-style: solid;
+        width: 33%;
+        margin-left: 2vw;
+        border-bottom-width: 0px;
+        border-bottom-style: solid;
+    }
+
+    .programm div:last-child {
+        border-right-width: 0px;
+        border-right-style: solid;
+    }
+
+    .programm {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
     #summerStatus {
         width: 50%;
         height: fit-content;
     }
 
     #location,
-    #lessonTypes {
+    #lessonTypes,
+    #prices,
+    #startWelcome {
         align-content: center;
         justify-content: center;
         align-items: center;
         flex-direction: row;
     }
 
-    #lessonTypes {
+    #lessonTypes, #prices, #startWelcome {
         margin-bottom: var(--large-margin-height);
         margin-top: var(--large-margin-height);
     }
@@ -344,10 +409,24 @@ iframe {
         height: 40vh;
         width: fit-content;
     }
+    #prices img {
+        width: 40vw;
+        height: fit-content;
+    }
+    #startWelcome img {
+        width: 30vw;
+        height: fit-content;
+        display: block;
+    }
 
     #lessonTypes p {
         text-align: right;
         margin-left: 2vw;
+        width: 95%;
+    }
+    #prices p, #startWelcome p {
+        text-align: left;
+        margin-right: 4vw;
         width: 95%;
     }
 
